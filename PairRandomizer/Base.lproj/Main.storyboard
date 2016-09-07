@@ -42,7 +42,11 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Classes" id="F26-Sm-OUZ">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="Kq9-cs-lMh"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="Kq9-cs-lMh">
+                            <connections>
+                                <action selector="addSubjectButtonTapped" destination="lS9-wQ-X5F" id="sXF-0q-QKE"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="I2B-qY-iWL" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -84,7 +88,11 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Students" id="k5o-Ag-lYS">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="aZP-Ee-r2M"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="aZP-Ee-r2M">
+                            <connections>
+                                <action selector="addStudentButtonTapped" destination="keS-Xt-Abp" id="5LQ-NJ-vOQ"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x98-fR-UBE" userLabel="First Responder" sceneMemberID="firstResponder"/>

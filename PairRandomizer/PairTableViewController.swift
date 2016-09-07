@@ -24,6 +24,10 @@ class PairTableViewController: UITableViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    @IBAction func addStudentButtonTapped() {
+        
+    }
 
     // MARK: - Table view data source
 
