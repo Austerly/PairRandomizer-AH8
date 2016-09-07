@@ -24,6 +24,9 @@
 		0118BB6C1D7FAAF60021C400 /* StudentController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0118BB6B1D7FAAF60021C400 /* StudentController.swift */; };
 		0118BB6E1D7FAFC20021C400 /* PairTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0118BB6D1D7FAFC20021C400 /* PairTableViewController.swift */; };
 		0118BB701D7FAFD60021C400 /* StudentDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0118BB6F1D7FAFD60021C400 /* StudentDetailViewController.swift */; };
+		0118BB721D7FB3340021C400 /* SingleButtonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0118BB711D7FB3340021C400 /* SingleButtonTableViewCell.swift */; };
+		0118BB751D7FB3500021C400 /* DoubleButtonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0118BB741D7FB3500021C400 /* DoubleButtonTableViewCell.swift */; };
+		0118BB771D7FB72E0021C400 /* Pair.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0118BB761D7FB72E0021C400 /* Pair.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +70,9 @@
 		0118BB6B1D7FAAF60021C400 /* StudentController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StudentController.swift; sourceTree = "<group>"; };
 		0118BB6D1D7FAFC20021C400 /* PairTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PairTableViewController.swift; sourceTree = "<group>"; };
 		0118BB6F1D7FAFD60021C400 /* StudentDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StudentDetailViewController.swift; sourceTree = "<group>"; };
+		0118BB711D7FB3340021C400 /* SingleButtonTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SingleButtonTableViewCell.swift; sourceTree = "<group>"; };
+		0118BB741D7FB3500021C400 /* DoubleButtonTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DoubleButtonTableViewCell.swift; sourceTree = "<group>"; };
+		0118BB761D7FB72E0021C400 /* Pair.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pair.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +123,7 @@
 		0118BB281D7F964E0021C400 /* PairRandomizer */ = {
 			isa = PBXGroup;
 			children = (
+				0118BB731D7FB33B0021C400 /* Views */,
 				0118BB651D7FA4C60021C400 /* Model Controllers */,
 				0118BB641D7FA4BF0021C400 /* Model Objects */,
 				0118BB681D7FA55E0021C400 /* Core */,
@@ -147,6 +154,7 @@
 		0118BB641D7FA4BF0021C400 /* Model Objects */ = {
 			isa = PBXGroup;
 			children = (
+				0118BB761D7FB72E0021C400 /* Pair.swift */,
 				0118BB571D7F9F0D0021C400 /* Model.xcdatamodeld */,
 				0118BB5A1D7FA1280021C400 /* Subject+CoreDataProperties.swift */,
 				0118BB5B1D7FA1280021C400 /* Subject.swift */,
@@ -193,6 +201,15 @@
 				0118BB321D7F964E0021C400 /* LaunchScreen.storyboard */,
 			);
 			name = Storyboards;
+			sourceTree = "<group>";
+		};
+		0118BB731D7FB33B0021C400 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0118BB711D7FB3340021C400 /* SingleButtonTableViewCell.swift */,
+				0118BB741D7FB3500021C400 /* DoubleButtonTableViewCell.swift */,
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -330,14 +347,17 @@
 				0118BB671D7FA54E0021C400 /* Stack.swift in Sources */,
 				0118BB5E1D7FA1280021C400 /* Subject+CoreDataProperties.swift in Sources */,
 				0118BB5F1D7FA1280021C400 /* Subject.swift in Sources */,
+				0118BB751D7FB3500021C400 /* DoubleButtonTableViewCell.swift in Sources */,
 				0118BB2C1D7F964E0021C400 /* SubjectListTableViewController.swift in Sources */,
 				0118BB6C1D7FAAF60021C400 /* StudentController.swift in Sources */,
 				0118BB2A1D7F964E0021C400 /* AppDelegate.swift in Sources */,
 				0118BB631D7FA4B10021C400 /* SubjectController.swift in Sources */,
+				0118BB721D7FB3340021C400 /* SingleButtonTableViewCell.swift in Sources */,
 				0118BB611D7FA1280021C400 /* Student.swift in Sources */,
 				0118BB591D7F9F0D0021C400 /* Model.xcdatamodeld in Sources */,
 				0118BB6E1D7FAFC20021C400 /* PairTableViewController.swift in Sources */,
 				0118BB701D7FAFD60021C400 /* StudentDetailViewController.swift in Sources */,
+				0118BB771D7FB72E0021C400 /* Pair.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

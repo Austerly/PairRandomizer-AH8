@@ -19,11 +19,11 @@
                                 <rect key="frame" x="0.0" y="92" width="600" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="xBT-Rl-GrY" id="lpQ-A6-A0o">
-                                    <rect key="frame" x="0.0" y="0.0" width="567" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="567" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Wac-KW-xzX">
-                                            <rect key="frame" x="15" y="0.0" width="550" height="43"/>
+                                            <rect key="frame" x="15" y="0.0" width="550" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -62,24 +62,71 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="AiU-H3-4rL">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="doubleButtonCell" id="AiU-H3-4rL" customClass="DoubleButtonTableViewCell" customModule="PairRandomizer" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="92" width="600" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="AiU-H3-4rL" id="Gj7-vP-4z0">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2R9-bF-jSl">
+                                            <rect key="frame" x="8" y="6" width="584" height="30"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w70-J5-LcY">
+                                                    <rect key="frame" x="0.0" y="0.0" width="292" height="30"/>
+                                                    <state key="normal" title="Button"/>
+                                                    <connections>
+                                                        <action selector="cellButtonTapped:" destination="AiU-H3-4rL" eventType="touchUpInside" id="P2d-Jb-U6X"/>
+                                                    </connections>
+                                                </button>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XlK-ak-Xb7">
+                                                    <rect key="frame" x="292" y="0.0" width="292" height="30"/>
+                                                    <state key="normal" title="Button"/>
+                                                    <connections>
+                                                        <action selector="cellButtonTapped:" destination="AiU-H3-4rL" eventType="touchUpInside" id="OYO-HE-02x"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="XlK-ak-Xb7" firstAttribute="width" secondItem="w70-J5-LcY" secondAttribute="width" id="If6-dg-gH5"/>
+                                            </constraints>
+                                        </stackView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="2R9-bF-jSl" firstAttribute="centerY" secondItem="Gj7-vP-4z0" secondAttribute="centerY" id="90V-Uz-VY8"/>
+                                        <constraint firstItem="2R9-bF-jSl" firstAttribute="leading" secondItem="Gj7-vP-4z0" secondAttribute="leadingMargin" id="J3s-Pc-AUn"/>
+                                        <constraint firstItem="2R9-bF-jSl" firstAttribute="trailing" secondItem="Gj7-vP-4z0" secondAttribute="trailingMargin" id="i3b-66-1xC"/>
+                                    </constraints>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="EoL-ff-CdS" kind="show" identifier="toStudentDetail" id="g7n-Vj-NOt"/>
+                                    <outlet property="leftButton" destination="w70-J5-LcY" id="vG0-bZ-Kwf"/>
+                                    <outlet property="rightButton" destination="XlK-ak-Xb7" id="KEO-69-cRW"/>
                                 </connections>
                             </tableViewCell>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="QXi-mT-lvh">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="singleButtonCell" id="QXi-mT-lvh" customClass="SingleButtonTableViewCell" customModule="PairRandomizer" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="136" width="600" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="QXi-mT-lvh" id="k3W-AQ-fCI">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xrg-wl-ARX">
+                                            <rect key="frame" x="8" y="5" width="584" height="30"/>
+                                            <state key="normal" title="Button"/>
+                                            <connections>
+                                                <action selector="cellButtonTapped" destination="QXi-mT-lvh" eventType="touchUpInside" id="zRs-Ef-wYY"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="Xrg-wl-ARX" firstAttribute="bottom" secondItem="k3W-AQ-fCI" secondAttribute="bottomMargin" id="5Ry-kz-fJw"/>
+                                        <constraint firstItem="Xrg-wl-ARX" firstAttribute="trailing" secondItem="k3W-AQ-fCI" secondAttribute="trailingMargin" id="MlT-QL-Vef"/>
+                                        <constraint firstItem="Xrg-wl-ARX" firstAttribute="leading" secondItem="k3W-AQ-fCI" secondAttribute="leadingMargin" id="cuY-x4-eIJ"/>
+                                    </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="singleButton" destination="Xrg-wl-ARX" id="Fzm-ha-RaK"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -90,10 +137,13 @@
                     <navigationItem key="navigationItem" title="Students" id="k5o-Ag-lYS">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="aZP-Ee-r2M">
                             <connections>
-                                <action selector="addStudentButtonTapped" destination="keS-Xt-Abp" id="5LQ-NJ-vOQ"/>
+                                <segue destination="EoL-ff-CdS" kind="show" identifier="toAddStudent" id="YcY-LE-X6k"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <segue destination="EoL-ff-CdS" kind="show" identifier="toStudentDetail" id="Otu-Yv-DxL"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x98-fR-UBE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -152,6 +202,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="deleteButton" destination="UaB-4e-7OQ" id="KMS-Y7-Q1L"/>
                         <outlet property="idTextField" destination="3o2-n7-txk" id="f7g-a2-4TP"/>
                         <outlet property="nameTextField" destination="dz2-fq-Dv6" id="Gqo-UX-xMN"/>
                     </connections>
@@ -177,4 +228,7 @@
             <point key="canvasLocation" x="323" y="-53"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="YcY-LE-X6k"/>
+    </inferredMetricsTieBreakers>
 </document>

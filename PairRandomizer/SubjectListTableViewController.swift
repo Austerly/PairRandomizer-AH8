@@ -56,8 +56,17 @@ class SubjectListTableViewController: UITableViewController {
             let newSubject = SubjectController.createSubject()
             newSubject.name = subjectTextField.text ?? "No Subject Name"
             
-            self.tableView.reloadData()
+            Stack.saveToPersistentStore()
+            
+            dispatch_async(dispatch_get_main_queue()) { () -> Void in
+                self.tableView.reloadData()
+            }
+
         }))
+        
+        alert.view.setNeedsLayout()
+        
+        presentViewController(alert, animated: true, completion: nil)
         
     }
     

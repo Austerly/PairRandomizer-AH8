@@ -14,9 +14,9 @@ import CoreData
 
 extension Subject {
 
+    @NSManaged var identifer: String?
     @NSManaged var name: String?
     @NSManaged var teacherName: String?
-    @NSManaged var identifer: String?
-    @NSManaged var students: NSSet?
+    @NSManaged var students: NSOrderedSet?
 
 }
