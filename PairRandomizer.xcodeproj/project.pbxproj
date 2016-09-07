@@ -21,6 +21,7 @@
 		0118BB611D7FA1280021C400 /* Student.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0118BB5D1D7FA1280021C400 /* Student.swift */; };
 		0118BB631D7FA4B10021C400 /* SubjectController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0118BB621D7FA4B10021C400 /* SubjectController.swift */; };
 		0118BB671D7FA54E0021C400 /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0118BB661D7FA54E0021C400 /* Stack.swift */; };
+		0118BB6C1D7FAAF60021C400 /* StudentController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0118BB6B1D7FAAF60021C400 /* StudentController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,7 @@
 		0118BB5D1D7FA1280021C400 /* Student.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Student.swift; sourceTree = "<group>"; };
 		0118BB621D7FA4B10021C400 /* SubjectController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubjectController.swift; sourceTree = "<group>"; };
 		0118BB661D7FA54E0021C400 /* Stack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stack.swift; sourceTree = "<group>"; };
+		0118BB6B1D7FAAF60021C400 /* StudentController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StudentController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,6 +156,7 @@
 			isa = PBXGroup;
 			children = (
 				0118BB621D7FA4B10021C400 /* SubjectController.swift */,
+				0118BB6B1D7FAAF60021C400 /* StudentController.swift */,
 			);
 			name = "Model Controllers";
 			sourceTree = "<group>";
@@ -322,6 +325,7 @@
 				0118BB5E1D7FA1280021C400 /* Subject+CoreDataProperties.swift in Sources */,
 				0118BB5F1D7FA1280021C400 /* Subject.swift in Sources */,
 				0118BB2C1D7F964E0021C400 /* ViewController.swift in Sources */,
+				0118BB6C1D7FAAF60021C400 /* StudentController.swift in Sources */,
 				0118BB2A1D7F964E0021C400 /* AppDelegate.swift in Sources */,
 				0118BB631D7FA4B10021C400 /* SubjectController.swift in Sources */,
 				0118BB611D7FA1280021C400 /* Student.swift in Sources */,
