@@ -19,6 +19,8 @@
 		0118BB5F1D7FA1280021C400 /* Subject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0118BB5B1D7FA1280021C400 /* Subject.swift */; };
 		0118BB601D7FA1280021C400 /* Student+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0118BB5C1D7FA1280021C400 /* Student+CoreDataProperties.swift */; };
 		0118BB611D7FA1280021C400 /* Student.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0118BB5D1D7FA1280021C400 /* Student.swift */; };
+		0118BB631D7FA4B10021C400 /* StudjectController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0118BB621D7FA4B10021C400 /* StudjectController.swift */; };
+		0118BB671D7FA54E0021C400 /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0118BB661D7FA54E0021C400 /* Stack.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +59,8 @@
 		0118BB5B1D7FA1280021C400 /* Subject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Subject.swift; sourceTree = "<group>"; };
 		0118BB5C1D7FA1280021C400 /* Student+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Student+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		0118BB5D1D7FA1280021C400 /* Student.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Student.swift; sourceTree = "<group>"; };
+		0118BB621D7FA4B10021C400 /* StudjectController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StudjectController.swift; sourceTree = "<group>"; };
+		0118BB661D7FA54E0021C400 /* Stack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stack.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,17 +111,11 @@
 		0118BB281D7F964E0021C400 /* PairRandomizer */ = {
 			isa = PBXGroup;
 			children = (
-				0118BB5A1D7FA1280021C400 /* Subject+CoreDataProperties.swift */,
-				0118BB5B1D7FA1280021C400 /* Subject.swift */,
-				0118BB5C1D7FA1280021C400 /* Student+CoreDataProperties.swift */,
-				0118BB5D1D7FA1280021C400 /* Student.swift */,
-				0118BB291D7F964E0021C400 /* AppDelegate.swift */,
-				0118BB2B1D7F964E0021C400 /* ViewController.swift */,
-				0118BB571D7F9F0D0021C400 /* Model.xcdatamodeld */,
-				0118BB2D1D7F964E0021C400 /* Main.storyboard */,
-				0118BB301D7F964E0021C400 /* Assets.xcassets */,
-				0118BB321D7F964E0021C400 /* LaunchScreen.storyboard */,
-				0118BB351D7F964E0021C400 /* Info.plist */,
+				0118BB651D7FA4C60021C400 /* Model Controllers */,
+				0118BB641D7FA4BF0021C400 /* Model Objects */,
+				0118BB681D7FA55E0021C400 /* Core */,
+				0118BB691D7FA56E0021C400 /* View Controllers */,
+				0118BB6A1D7FA5790021C400 /* Storyboards */,
 			);
 			path = PairRandomizer;
 			sourceTree = "<group>";
@@ -138,6 +136,54 @@
 				0118BB4B1D7F964E0021C400 /* Info.plist */,
 			);
 			path = PairRandomizerUITests;
+			sourceTree = "<group>";
+		};
+		0118BB641D7FA4BF0021C400 /* Model Objects */ = {
+			isa = PBXGroup;
+			children = (
+				0118BB571D7F9F0D0021C400 /* Model.xcdatamodeld */,
+				0118BB5A1D7FA1280021C400 /* Subject+CoreDataProperties.swift */,
+				0118BB5B1D7FA1280021C400 /* Subject.swift */,
+				0118BB5C1D7FA1280021C400 /* Student+CoreDataProperties.swift */,
+				0118BB5D1D7FA1280021C400 /* Student.swift */,
+			);
+			name = "Model Objects";
+			sourceTree = "<group>";
+		};
+		0118BB651D7FA4C60021C400 /* Model Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				0118BB621D7FA4B10021C400 /* StudjectController.swift */,
+			);
+			name = "Model Controllers";
+			sourceTree = "<group>";
+		};
+		0118BB681D7FA55E0021C400 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				0118BB291D7F964E0021C400 /* AppDelegate.swift */,
+				0118BB661D7FA54E0021C400 /* Stack.swift */,
+				0118BB351D7F964E0021C400 /* Info.plist */,
+				0118BB301D7F964E0021C400 /* Assets.xcassets */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+		0118BB691D7FA56E0021C400 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				0118BB2B1D7F964E0021C400 /* ViewController.swift */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		0118BB6A1D7FA5790021C400 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				0118BB2D1D7F964E0021C400 /* Main.storyboard */,
+				0118BB321D7F964E0021C400 /* LaunchScreen.storyboard */,
+			);
+			name = Storyboards;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -272,10 +318,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				0118BB601D7FA1280021C400 /* Student+CoreDataProperties.swift in Sources */,
+				0118BB671D7FA54E0021C400 /* Stack.swift in Sources */,
 				0118BB5E1D7FA1280021C400 /* Subject+CoreDataProperties.swift in Sources */,
 				0118BB5F1D7FA1280021C400 /* Subject.swift in Sources */,
 				0118BB2C1D7F964E0021C400 /* ViewController.swift in Sources */,
 				0118BB2A1D7F964E0021C400 /* AppDelegate.swift in Sources */,
+				0118BB631D7FA4B10021C400 /* StudjectController.swift in Sources */,
 				0118BB611D7FA1280021C400 /* Student.swift in Sources */,
 				0118BB591D7F9F0D0021C400 /* Model.xcdatamodeld in Sources */,
 			);
