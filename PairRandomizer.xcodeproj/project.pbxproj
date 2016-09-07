@@ -19,7 +19,7 @@
 		0118BB5F1D7FA1280021C400 /* Subject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0118BB5B1D7FA1280021C400 /* Subject.swift */; };
 		0118BB601D7FA1280021C400 /* Student+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0118BB5C1D7FA1280021C400 /* Student+CoreDataProperties.swift */; };
 		0118BB611D7FA1280021C400 /* Student.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0118BB5D1D7FA1280021C400 /* Student.swift */; };
-		0118BB631D7FA4B10021C400 /* StudjectController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0118BB621D7FA4B10021C400 /* StudjectController.swift */; };
+		0118BB631D7FA4B10021C400 /* SubjectController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0118BB621D7FA4B10021C400 /* SubjectController.swift */; };
 		0118BB671D7FA54E0021C400 /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0118BB661D7FA54E0021C400 /* Stack.swift */; };
 /* End PBXBuildFile section */
 
@@ -59,7 +59,7 @@
 		0118BB5B1D7FA1280021C400 /* Subject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Subject.swift; sourceTree = "<group>"; };
 		0118BB5C1D7FA1280021C400 /* Student+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Student+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		0118BB5D1D7FA1280021C400 /* Student.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Student.swift; sourceTree = "<group>"; };
-		0118BB621D7FA4B10021C400 /* StudjectController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StudjectController.swift; sourceTree = "<group>"; };
+		0118BB621D7FA4B10021C400 /* SubjectController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubjectController.swift; sourceTree = "<group>"; };
 		0118BB661D7FA54E0021C400 /* Stack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stack.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -153,7 +153,7 @@
 		0118BB651D7FA4C60021C400 /* Model Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				0118BB621D7FA4B10021C400 /* StudjectController.swift */,
+				0118BB621D7FA4B10021C400 /* SubjectController.swift */,
 			);
 			name = "Model Controllers";
 			sourceTree = "<group>";
@@ -323,7 +323,7 @@
 				0118BB5F1D7FA1280021C400 /* Subject.swift in Sources */,
 				0118BB2C1D7F964E0021C400 /* ViewController.swift in Sources */,
 				0118BB2A1D7F964E0021C400 /* AppDelegate.swift in Sources */,
-				0118BB631D7FA4B10021C400 /* StudjectController.swift in Sources */,
+				0118BB631D7FA4B10021C400 /* SubjectController.swift in Sources */,
 				0118BB611D7FA1280021C400 /* Student.swift in Sources */,
 				0118BB591D7F9F0D0021C400 /* Model.xcdatamodeld in Sources */,
 			);
